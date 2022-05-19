@@ -1,0 +1,374 @@
+/* 
+Tamplate Name : restaurant template
+Author Name : unknown
+Author gmail : null
+Tamplate Designer : unknown
+Redesign Template : mayraj uddin
+Version : 1.0
+===========================
+Table of Content
+---------------------------
+* Common CSS
+=============
+
+Index page CSS
+==================
+1. header section
+2. best seller section
+3. order section
+4. Statistics section
+5. gril section
+6. field section
+7. subescribe section
+8. contact section
+*/
+
+/* Common css start */
+:root{
+    --dark-c : #303030;
+    --hightlight-c :#ffc200;
+    --style-font : 'Grand Hotel', cursive;
+}
+body{
+    font-family: 'Montserrat', sans-serif;;
+}
+h1,h2,h3,h4,h5,h6,
+p,
+span,small,
+ol,ul{
+    padding: 0;
+    margin: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.active{
+    color: var(--hightlight-c) !important;
+}
+.grandhotel{
+    font-family: var(--style-font)
+}
+/* Common css end */
+
+/* header section start */
+#banner{
+    background: #303030 url(images/bannerbg.jpg) no-repeat;
+    background-size: 50%;
+    height: 480px ;
+    background-position: left;
+    overflow: hidden;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .menu{
+    margin-right: 40px;
+}
+/* #banner .menu ul li{} */
+#banner .menu ul li a{
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+#banner .menu ul li:hover a{
+    color: var(--hightlight-c);
+}
+#banner nav .search a{
+    display: inline-block;
+    color: #fff;
+}
+#banner .header_content{
+    height: 100%;
+}
+#banner .header_content .left_content h1{
+    font-size: 92px;
+    font-family: var(--style-font);
+    text-transform: capitalize;
+    color: var(--hightlight-c);
+    line-height: 50px;
+}
+#banner .header_content .left_content p{
+    color: #fff;
+    font-size: 18px;
+    padding: 36px 0;
+}
+#banner .header_content .left_content a{
+    display: inline-block;
+    padding: 8px 32px;
+    text-transform: uppercase;
+    font-size: 16px ;
+    font-weight: 700;
+    color: var(--dark-c);
+    background-color: var(--hightlight-c);
+    border-radius: 4px;
+}
+/* header section end */
+
+/*best seller section start */
+#bSeller {
+    padding-bottom: 60px;
+}
+#bSeller .seller_tle,
+#statistic .statistic_tle,
+#subs .subs_tle{
+    padding: 60px 0;
+}
+#bSeller .seller_tle h2,
+#subs .subs_tle h2{
+    font-family: var(--style-font);
+    font-size: 58px;
+    color: var(--dark-c);
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+#bSeller .seller_tle p,
+#statistic .statistic_tle  p,
+#subs .subs_tle p{
+    font-size: 20px;
+    color: var(--dark-c);
+}
+#bSeller .seller_item{
+    text-align: center;
+}
+#bSeller .seller_item .secimg{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    overflow: hidden;
+}
+#bSeller .seller_item h5{
+    font-family: var(--style-font);
+    font-size: 42px;
+    padding: 18px 0;
+    text-transform: capitalize;
+}
+#bSeller .seller_item p{
+    padding: 0 16px;
+    font-size: 16px;
+}
+/*best seller section end */
+/* order section start */
+#order .left_img{
+    text-align: center;
+}
+#order{
+    background: url(images/order-bg.png);
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+#order .order_img,
+#cgrill .grill_img{
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+#order .order_right_content h3,
+#cgrill .left_content h3{
+    font-size: 58px;
+    text-transform: capitalize;
+    color: var(--hightlight-c);
+}
+#order .order_right_content p,
+#cgrill .left_content p{
+    font-size: 24px;
+    padding-top: 12px;
+    color: #fff;
+}
+#order .order_right_content a,
+#cgrill .left_content a {
+    display: inline-block;
+    padding: 10px 58px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--hightlight-c);
+    color: var(--dark-c);
+    border-radius: 4px;
+    margin-top: 24px;
+}
+/* order section end */
+/* Statistics section start */
+#statistic{
+    background: var(--dark-c) url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+}
+#statistic .statistic_tle h2{
+    color: var(--hightlight-c);
+    text-transform: capitalize;
+    font-size: 58px;
+    padding-bottom: 20px;
+}
+#statistic .statistic_tle p{
+    color: #fff;
+}
+#statistic .stat_item {
+    padding: 60px 0;
+}
+#statistic .stat_item .stat_content{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    display: inline-block;
+    position: relative;
+}
+#statistic .stat_item .stat_content .cound{
+    position: absolute;
+    left: 50%;
+    top: 50% ;
+    transform: translate(-50% , -50%);
+}
+#statistic .stat_item .stat_content h4{
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--hightlight-c);
+}
+#statistic .stat_item .stat_content p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* chicken grill section start */
+#cgrill {
+    background: url(images/grill-bg.png) no-repeat;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: left bottom;
+}
+/* chicken grill section end */
+/* field section start */
+#field{
+    background: url(images/field.jpg) no-repeat;
+    background-size: cover;
+    height: 380px;
+    background-position: left center;
+    position: relative;
+    z-index: 1;
+}
+#field::before{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgb(255, 196, 0, .6);
+    z-index: -1;
+}
+#field .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#field .field_content p{
+    font-size: 20px;
+    color: var(--dark-c);
+    padding: 0 24px;
+}
+#field .field_content h4{
+    font-size: 58px;
+    color: var(--dark-c);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+/* field section end */
+/* subescribe section star */
+#subs{
+    background: url(images/bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: left top;
+    height: 435px;
+}
+#subs form{
+    margin-top: 60px;
+}
+#subs form input{
+    border: none;
+    border-radius: initial;
+    padding: 14px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: var(--dark-c);
+}
+#subs form input:focus{
+    box-shadow: none;
+}
+#subs form input[type=submit]{
+    background-color: var(--hightlight-c);
+    font-weight: 700;
+}
+/* subescribe section end */
+/* contact section start */
+#contact{
+    background-color: var(--dark-c);
+    padding: 60px 0;
+    color: #fff;
+}
+#contact .contact_tle h4 {
+    font-size: 42px;
+    text-transform: capitalize;
+    color: #fff;
+}
+#contact .contact_tle p{
+    font-size: 18px;
+    padding: 16px 0;
+    text-align: justify;
+    padding-right: 40px;
+}
+#contact .contact_tle ul li{
+    margin-right: 18px;
+}
+#contact .contact_tle ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    color: var(--dark-c);
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s linear;
+}
+#contact .contact_tle ul li a:hover{
+    background-color: var(--hightlight-c);
+}
+#contact .contact_about h4,
+#contact .contact_service h4,
+#contact .contact_others h4{
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+#contact .contact_about ul li,
+#contact .contact_service ul li,
+#contact .contact_others ul li{
+    margin-bottom: 8px;
+}
+#contact .contact_about ul li:hover a,
+#contact .contact_service ul li:hover a,
+#contact .contact_others ul li:hover a{
+    color: var(--hightlight-c);
+}
+#contact .contact_about ul li a,
+#contact .contact_service ul li a,
+#contact .contact_others ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+    transition: all .3s linear;
+}
+/* contact section end */
+/* footer section start */
+/* footer{} */
+/* footer section end */
