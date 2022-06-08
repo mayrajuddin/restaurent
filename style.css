@@ -60,9 +60,33 @@ ul,ol{
     height: 480px ;
     background-position: left;
     overflow: hidden;
+    position: relative;
 }
-#banner .container{
+#banner::before{
+    position: absolute;
+    content: '';
+    left: 44%;
+    top: 0;
+    width: 200px;
+    background: url(images/restaurent-banner-bg.png
+    );
     height: 100%;
+    transform: translateX(-46%);
+}
+#banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 54%;
+    background: url(images/bg.jpg);
+    z-index: 1;
+    background-size: cover;
+}
+#banner nav{
+    z-index: 999;
+    padding: 14px 0;
 }
 #banner .menu{
     margin-right: 40px;
@@ -82,15 +106,15 @@ ul,ol{
     display: inline-block;
     color: #fff;
 }
-#banner .header_content{
-    height: 100%;
+#banner .header_content .left_content{
+    padding: 44px 5px;
+    z-index: 2;
 }
 #banner .header_content .left_content h1{
     font-size: 92px;
     font-family: var(--style-font);
     text-transform: capitalize;
     color: var(--hightlight-c);
-    line-height: 50px;
 }
 #banner .header_content .left_content p{
     color: #fff;
@@ -164,8 +188,8 @@ ul,ol{
 }
 #order .order_img,
 #cgrill .grill_img{
-    width: 420px;
-    height: 420px;
+    width: 80%;
+    height: 50%;
     border-radius: 50%;
     display: inline-block;
     overflow: hidden;
